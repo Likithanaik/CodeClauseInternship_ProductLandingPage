@@ -26,3 +26,9 @@ Welcome to the README for our Restaurant Product Landing Page project. This webp
 - HTML
 - CSS
 - JavaScript 
+
+## Live Project
+
+You can access the live version of this project by following this link:
+
+https://likithanaik.github.io/CodeClauseInternship_ProductLandingPage/
