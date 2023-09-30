@@ -1,0 +1,295 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.Desktop1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: white;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+.Rectangle11 {
+    width: 1440px;
+    height: 1348px;
+    left: 0px;
+    top: 2000px;
+    position: absolute;
+    box-shadow: 6px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.NavBarLinks {
+    z-index: 1000;
+    /* Set a high z-index value */
+}
+
+.Hero {
+    width: 1540px;
+    height: 860px;
+    position: relative;
+    overflow: hidden;
+    /* Hide overflowing content from slides */
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    animation: fade 5s ease-in-out infinite;
+    /* Adjust the duration as needed */
+}
+
+.fade {
+    animation-name: fade;
+}
+
+@keyframes fade {
+
+    0%,100% {
+        opacity: 0.3;
+    }
+
+    20%,80% {
+        opacity: 1;
+    }
+}
+
+
+.Rectangle1 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.50);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Group1 {
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+}
+
+.caption {
+    width: 700px;
+    height: 84px;
+    left: 30px;
+    top: 139px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-shadow: 2in;
+    line-height: 25.60px;
+    word-wrap: break-word;
+}
+
+
+.btn {
+    width: 190px;
+    height: 55px;
+    left: 286px;
+    font-size: 18px;
+    top: 257px;
+    position: absolute;
+    background: rgb(2, 61, 2);
+    border-radius: 1000px;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+
+
+}
+
+.btn:hover {
+    background-color: #5bca5d;
+    transform: translateY(5px);
+}
+
+.heading {
+    left:100px;
+    display: inline;
+    top: 0px;
+    position: absolute;
+    color: white;
+    font-size: 96px;
+    font-family: Oleo Script Swash Caps;
+    font-weight: 400
+}
+
+
+/* // css of menu page  */
+.imgFrame {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url(/images/tasty-burger-isolated-white-back-hamburger-fastfood-with-beef-cheese.jpg);
+}
+
+.Frame2 {
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: rgb(0, 0, 0);
+}
+
+.menupic {
+    width: 183px;
+    height: 169px;
+    position: absolute;
+    border-radius: 9999px;
+}
+
+/* Style for the navigation bar */
+.NavBarLinks {
+    width: 1440px;
+    height: 120px;
+    left: 10px;
+    top: 0px;
+    position: absolute;
+    background: rgba(7.64, 7.54, 7.54, 0);
+}
+
+/* Style for the logo */
+.Logo {
+    width: 70px;
+    height: 54px;
+    margin: 33px 0 0 120px;
+}
+
+/* Style for the navigation links */
+.NavLinks {
+    position: absolute;
+    left: 600px;
+    top: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.NavLinks a {
+    font-size: 25px;
+    /* font size */
+}
+.NavLinks a:hover {
+    font-size: 30px;
+color: #51db47;
+    
+}
+/* Style for individual navigation links */
+
+.Link {
+    color: white;
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    text-decoration: underline;
+    word-wrap: break-word;
+}
+.Service-Section {
+    display: flex;
+    align-items: center;
+    /* Set appropriate widths, heights, margins, and padding here */
+  }
+
+ 
+/* Add styles for the popup */
+/* Style for the popup container */
+/* Style for the larger popup container */
+.popup {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:black;
+    padding: 100px;
+    box-shadow: 0 0 20px rgb(220, 220, 220);
+    border-radius: 10px;
+    z-index: 1000;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Style for the popup heading */
+.popup h2 {
+    font-size: 38px;
+    color: #d3cbcb;
+    margin-top:0px ;
+    margin-bottom: 36px;
+}
+
+.popup h3 {
+    
+    color: #d3cbcb;
+    margin-bottom: 3px;
+}
+/* Style for the popup buttons */
+.popup button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #613325;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.popup button:hover {
+    background-color: #816d69;
+    transform: translateY(5px);
+}
+
+/* Style for the text below the buttons */
+.popup-text {
+    font-size: 18px;
+    color: #fefefe;
+    margin-top: 20px;
+}
+
+/* Center the buttons and text horizontally */
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Apply the animation to the "rotate" class */
+    .rotate {
+        animation: spin 10s linear infinite; /* Adjust the duration (10s) as needed */
+    }
+
+    .Rectangleservice{
+        transition: box-shadow 0.3s ease;
+    } 
+    .Rectangleservice:hover{
+        box-shadow:  0 0 50px rgba(255, 255, 255, 0.5);
+    } 

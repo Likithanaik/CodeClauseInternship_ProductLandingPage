@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(35, 32, 32);
+            background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url("images/register.jpg");
+       
+        }
+
+        .center {
+            max-width: 600px;
+            margin: 10px auto;
+            height: 700px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+         text-align: center; background-image: url("images/register.jpg") ;
+            background-repeat: no-repeat;
+        background-size: cover;
+
+
+        }
+        .center h1{
+            text-align: center;
+            padding: 0 0 20px 0;
+           border-bottom: 1px solid silver;
+        }
+        .center form{
+          padding: 0 40px;
+          box-sizing: border-box;
+        }
+        form .txt_field{
+            position: relative;
+            border-bottom: 2px solid black;
+            margin: 30px 0;
+        }
+        .txt_field input{
+            width: 100%;
+            padding: 0px 50px;
+            height: 50px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+        }.txt_field label{
+            position: absolute;
+            top: 50%; 
+            left: 5px;
+            color: #adadad;
+            transform: translateY(-50%); 
+            font-size: 16px;
+            pointer-events: none;
+
+}
+
+.txt_field span::before{
+     content:"";
+     position: absolute;
+     top: 48px;
+     left: 0;
+     width: 0%;
+     height: 2px;
+     background:#E7653D ;
+        }
+        .txt_field input:focus ~ label,
+        .txt_field input:valid~label{
+            top: -5px;
+            color: #E7653D;
+        }
+        .txt_field input:focus~span::before,
+        .txt_field input:valid~span::before{
+            width: 100%;
+
+        }
+        .register-button {
+            background-color: #E7653D;
+            color: #ffffff;
+            border: none;
+            padding: 10px 40px;
+            border-radius: 30px;
+            cursor: pointer;
+ margin:20px auto;
+ display: block;
+
+        }
+
+        .register-button:hover {
+            background-color: rgb(180, 134, 104);
+            animation: reverse ;
+        }
+        .L{
+            font-family: 'Lucida Handwriting',cursive;
+            color: #E7653D;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 30px;
+        }
+        .S{
+            color: rgb(157, 153, 152);
+            font-size: 15px;
+            margin-top: 10px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="center">
+        <img style="width: 100px;height: 100px;left:0px;top:0px;position:relative;mix-blend-mode:lighten;border-radius: 9999px;background: transparent;"src="images/loginicon.jpg"/>
+        
+        <p class="L">Register</p>
+        <p class="S">Create your account</p>
+        <form action='/register' method="POST">
+            
+            <div class="txt_field">      
+                <input type="text" name="username" required>        
+                <label>Username</label>        
+                </div>
+                <div class="txt_field">        
+                  <input type="password" name="password" required>      
+                  <label>Password</label>
+                </div>
+               
+                  <div class="txt_field" style="margin-bottom: 10px;">        
+                    <input type="email" name="email" required>      
+                    <label>Mail</label>
+                  </div>
+                  
+               <div>  
+                  <button class="register-button" type="submit">Register</button>
+               </div>
+               A restaurant website for easy table booking and menu exploration.<br>
+                <a href="#"  >Fogot password?</a>
+        
+               <p style="color: rgb(255, 255, 255);">--OR--</p>
+               <a href="#">
+               <img className="Ellipse2" style="width: 40px;height: 40px; left: 400; top: 650; position: relative; border-Radius: 20px;" src="images/googleicon.jpg" />
+        </a>
+            </form>
+    </div>
+        <script src="frontend.js"></script>
+
+</body>>
+</html>

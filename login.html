@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(43, 42, 42);
+            background-repeat: no-repeat;
+            background-size: cover;
+           
+
+        }
+
+        .center {
+            max-width: 600px;
+            margin: 10px auto;
+            height: 600px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center;
+            background-image: url("images/1.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+
+        }
+
+        .center h1 {
+            text-align: center;
+            padding: 0 0 20px 0;
+            border-bottom: 1px solid rgb(0, 0, 0);
+        }
+
+        .center form {
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        form .txt_field {
+            position: relative;
+            border-bottom: 2px solid black;
+            margin: 30px 0;
+        }
+
+        .txt_field input {
+            width: 100%;
+            padding: 0px 50px;
+            height: 70px;
+            font-size: 16px;
+            border: none;
+            background: none;
+            outline: none;
+        }
+
+        .txt_field label {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            color: #adadad;
+            transform: translateY(-50%);
+            font-size: 16px;
+            pointer-events: none;
+
+        }
+
+        .txt_field span::before {
+            content: "";
+            position: absolute;
+            top: 48px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: orange;
+        }
+
+        .txt_field input:focus~label,
+        .txt_field input:valid~label {
+            top: -5px;
+            color: orange;
+        }
+
+        .txt_field input:focus~span::before,
+        .txt_field input:valid~span::before {
+            width: 100%;
+
+        }
+
+        .login-button {
+            background-color: rgb(2, 61, 2);
+            color: #ffffff;
+            border: none;
+            padding: 10px 40px;
+            border-radius: 30px;
+            cursor: pointer;
+            margin: 20px auto;
+            display: block;
+
+        }
+
+        .login-button:hover {
+            background-color: rgb(5, 107, 5);
+            animation: reverse;
+        }
+
+        .L {
+            font-family: 'Lucida Handwriting', cursive;
+            color: #51db47;
+            margin-top: 10px;
+            margin-bottom: 0px;
+            font-size: 30px;
+        }
+
+        .S {
+            color: rgb(157, 153, 152);
+            font-size: 15px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <img style="width: 100px;height: 100px;left:0px;top:0px;position:relative;mix-blend-mode:lighten;border-radius: 9999px;background: transparent;"
+            src="images/loginicon.jpg" />
+
+        <h2 class="L">Sign in</h2>
+        <p class="S">Sign in to your account</p>
+        <form  action="/login" method="post" id="login-form">
+
+            <div class="txt_field">
+                <input type="text" name="username" style="color:white ;" required>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password"  name="password" style="color: #ffffff;" required>
+                <label>Password</label>
+            </div>
+            <div>
+                <a href="#">Fogot password?</a>
+                <button class="login-button" type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+    <script src="frontend.js"></script>
+
+</body>
+
+</html>
